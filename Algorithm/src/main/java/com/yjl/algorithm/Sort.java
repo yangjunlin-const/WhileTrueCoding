@@ -6,5 +6,6 @@ package com.yjl.algorithm;
 public class Sort {
     public static void main(String[] args) {
         int a = 0;
+        System.out.println("this is a test");
     }
 }
