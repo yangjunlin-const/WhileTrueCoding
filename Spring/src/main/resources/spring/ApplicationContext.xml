@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:task="http://www.springframework.org/schema/task"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
+    <context:annotation-config/>
+    <context:component-scan base-package="com.yjl.spring.*">
+    </context:component-scan>
+
+    <!-- 处理对静态资源的请求-->
+  <!--  <mvc:resources mapping="/resources/" location="/resources/"/>-->
+    <!-- 配置注解驱动-->
+   <!-- <mvc:annotation-driven />-->
+
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:conf.properties</value>
+            </list>
+        </property>
+    </bean>
+
+    <!--<bean id="springContextUtil" class="com.yjl.spring.common.spring.SpringContextUtils" scope="singleton"/>-->
+
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
+          destroy-method="close">
+        <property name="driverClass">
+            <value>${datasource.driverClassName}</value>
+        </property>
+        <property name="jdbcUrl">
+            <value>${datasource.url}</value>
+        </property>
+        <property name="user">
+            <value>${datasource.username}</value>
+        </property>
+        <property name="password">
+            <value>${datasource.password}</value>
+        </property>
+        <property name="acquireIncrement">
+            <value>${c3p0.acquireIncrement}</value>
+        </property>
+        <property name="initialPoolSize">
+            <value>${c3p0.initialPoolSize}</value>
+        </property>
+        <property name="minPoolSize">
+            <value>${c3p0.minPoolSize}</value>
+        </property>
+        <property name="maxPoolSize">
+            <value>${c3p0.maxPoolSize}</value>
+        </property>
+        <property name="maxIdleTime">
+            <value>${c3p0.maxIdleTime}</value>
+        </property>
+        <property name="idleConnectionTestPeriod">
+            <value>${c3p0.idleConnectionTestPeriod}</value>
+        </property>
+        <property name="maxStatements">
+            <value>${c3p0.maxStatements}</value>
+        </property>
+        <property name="numHelperThreads">
+            <value>${c3p0.numHelperThreads}</value>
+        </property>
+    </bean>
+
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="configLocation" value="classpath:mybatis/mybatis-config.xml"/>
+        <property name="mapperLocations">
+            <array>
+                <value>classpath*:mybatis/AAsql/*.xml</value>
+            </array>
+        </property>
+    </bean>
+
+    <!-- DAO接口所在包名，Spring会自动查找其下的类 -->
+   <!-- <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.yjl.spring.dao"/>
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
+    </bean>-->
+
+    <!-- (事务管理)transaction manager, use JtaTransactionManager for global tx -->
+   <!-- <bean id="transactionManager"
+          class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>-->
+
+    <!-- 每2分钟 -->
+    <!--   <bean id="classifyTask" class="ClassifyDealTask" scope="singleton"
+             init-method="excute" lazy-init="false">
+       </bean>
+       <task:scheduled-tasks>
+           <task:scheduled ref="classifyTask" method="excute" fixed-delay="120000"/>
+       </task:scheduled-tasks>-->
+
+</beans>

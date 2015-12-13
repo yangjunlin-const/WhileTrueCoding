@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yjl.spring.dao.User2MovieTagMapper" >
+  <resultMap id="BaseResultMap" type="com.yjl.spring.model.User2MovieTag" >
+    <id column="user_id" property="userId" jdbcType="INTEGER" />
+    <id column="movie_id" property="movieId" jdbcType="INTEGER" />
+    <result column="tag" property="tag" jdbcType="VARCHAR" />
+    <result column="tag_time" property="tagTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    user_id, movie_id, tag, tag_time
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="com.yjl.spring.model.User2MovieTagKey" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_user_movie_tag_map
+    where user_id = #{userId,jdbcType=INTEGER}
+      and movie_id = #{movieId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="com.yjl.spring.model.User2MovieTagKey" >
+    delete from t_user_movie_tag_map
+    where user_id = #{userId,jdbcType=INTEGER}
+      and movie_id = #{movieId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.yjl.spring.model.User2MovieTag" >
+    insert into t_user_movie_tag_map (user_id, movie_id, tag, 
+      tag_time)
+    values (#{userId,jdbcType=INTEGER}, #{movieId,jdbcType=INTEGER}, #{tag,jdbcType=VARCHAR}, 
+      #{tagTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.yjl.spring.model.User2MovieTag" >
+    insert into t_user_movie_tag_map
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="movieId != null" >
+        movie_id,
+      </if>
+      <if test="tag != null" >
+        tag,
+      </if>
+      <if test="tagTime != null" >
+        tag_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="userId != null" >
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="movieId != null" >
+        #{movieId,jdbcType=INTEGER},
+      </if>
+      <if test="tag != null" >
+        #{tag,jdbcType=VARCHAR},
+      </if>
+      <if test="tagTime != null" >
+        #{tagTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.yjl.spring.model.User2MovieTag" >
+    update t_user_movie_tag_map
+    <set >
+      <if test="tag != null" >
+        tag = #{tag,jdbcType=VARCHAR},
+      </if>
+      <if test="tagTime != null" >
+        tag_time = #{tagTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where user_id = #{userId,jdbcType=INTEGER}
+      and movie_id = #{movieId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.yjl.spring.model.User2MovieTag" >
+    update t_user_movie_tag_map
+    set tag = #{tag,jdbcType=VARCHAR},
+      tag_time = #{tagTime,jdbcType=TIMESTAMP}
+    where user_id = #{userId,jdbcType=INTEGER}
+      and movie_id = #{movieId,jdbcType=INTEGER}
+  </update>
+</mapper>

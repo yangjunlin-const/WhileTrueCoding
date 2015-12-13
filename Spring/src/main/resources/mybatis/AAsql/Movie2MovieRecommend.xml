@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yjl.spring.dao.Movie2MovieRecommendDao" >
+  <resultMap id="BaseResultMap" type="com.yjl.spring.model.Movie2MovieRecommend" >
+    <id column="recom_id" property="recomId" jdbcType="INTEGER" />
+    <result column="movie_id" property="movieId" jdbcType="INTEGER" />
+    <result column="recom_movie_ids" property="recomMovieIds" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    recom_id, movie_id, recom_movie_ids
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_movie_recom_movie
+    where recom_id = #{recomId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_movie_recom_movie
+    where recom_id = #{recomId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.yjl.spring.model.Movie2MovieRecommend" >
+    insert into t_movie_recom_movie (recom_id, movie_id, recom_movie_ids
+      )
+    values (#{recomId,jdbcType=INTEGER}, #{movieId,jdbcType=INTEGER}, #{recomMovieIds,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.yjl.spring.model.Movie2MovieRecommend" >
+    insert into t_movie_recom_movie
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="recomId != null" >
+        recom_id,
+      </if>
+      <if test="movieId != null" >
+        movie_id,
+      </if>
+      <if test="recomMovieIds != null" >
+        recom_movie_ids,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="recomId != null" >
+        #{recomId,jdbcType=INTEGER},
+      </if>
+      <if test="movieId != null" >
+        #{movieId,jdbcType=INTEGER},
+      </if>
+      <if test="recomMovieIds != null" >
+        #{recomMovieIds,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.yjl.spring.model.Movie2MovieRecommend" >
+    update t_movie_recom_movie
+    <set >
+      <if test="movieId != null" >
+        movie_id = #{movieId,jdbcType=INTEGER},
+      </if>
+      <if test="recomMovieIds != null" >
+        recom_movie_ids = #{recomMovieIds,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where recom_id = #{recomId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.yjl.spring.model.Movie2MovieRecommend" >
+    update t_movie_recom_movie
+    set movie_id = #{movieId,jdbcType=INTEGER},
+      recom_movie_ids = #{recomMovieIds,jdbcType=VARCHAR}
+    where recom_id = #{recomId,jdbcType=INTEGER}
+  </update>
+  <select id="selectByMovieId" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select
+    <include refid="Base_Column_List" />
+    from t_movie_recom_movie
+    where recom_id = #{movieId,jdbcType=INTEGER}
+  </select>
+</mapper>

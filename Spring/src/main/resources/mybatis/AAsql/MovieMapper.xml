@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yjl.spring.MovieMapper">
+    <resultMap id="HomePageMovie" type="com.yjl.spring.model.Movie">
+        <id column="movie_id" property="id" jdbcType="INTEGER"/>
+        <result column="movie_name" property="name" jdbcType="VARCHAR"/>
+        <result column="movie_time" property="time" jdbcType="DATE"/>
+        <result column="movie_description" property="description" jdbcType="VARCHAR"/>
+        <result column="movie_director" property="director" jdbcType="VARCHAR"/>
+        <result column="movie_writer" property="writer" jdbcType="VARCHAR"/>
+        <result column="movie_language" property="language" jdbcType="VARCHAR"/>
+        <result column="movie_long" property="mLong" jdbcType="INTEGER"/>
+        <result column="movie_rate" property="rate" jdbcType="DOUBLE"/>
+        <result column="movie_rate_time" property="rateTime" jdbcType="DATE"/>
+        <result column="movie_click_count" property="clickCount" jdbcType="INTEGER"/>
+        <result column="movie_collect_count" property="collectCount" jdbcType="INTEGER"/>
+        <result column="movie_like_count" property="likeCount" jdbcType="INTEGER"/>
+        <result column="movie_share_count" property="shareCount" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <!-- selectNewRatingMovieList是为首页获取最新最热的电影 -->
+    <select id="selectNewRatingMovieList"
+            parameterType="Integer"
+            resultMap="HomePageMovie">
+        <![CDATA[
+        SELECT * FROM T_movie movie
+        ORDER BY movie.movie_time DESC,movie.movie_rate DESC,movie.movie_like_count DESC,movie.movie_share_count DESC,movie.movie_name ASC
+        limit ${_parameter}
+         ]]>
+    </select>
+    <!-- 根据电影类型参数获得相应类型的电影，并按最新最热电影原则去排序，获得前一定量（传递来的参数）的数据 -->
+    <select id="selectNewRatingTypeMovieList" parameterType="java.util.Map" resultMap="HomePageMovie">
+        <![CDATA[
+        SELECT * FROM T_movie movie where movie.movie_id in
+        (SELECT t.movie_id FROM T_movie_type_map t where t.movie_type_id in
+        (select tt.movie_type_id from T_movie_type tt where tt.movie_type_name = #{movieType,jdbcType=VARCHAR}))
+        ORDER BY movie.movie_time DESC,movie.movie_rate DESC,movie.movie_like_count DESC,movie.movie_share_count DESC,movie.movie_name ASC
+        limit #{newRatingMovieCount,jdbcType=INTEGER}
+        ]]>
+    </select>
+
+    <!-- 根据电影名来搜索,以下搜索内容都需要限制搜索的总数maxCount -->
+    <select id="findMovieByMovieName" parameterType="java.util.Map" resultMap="HomePageMovie">
+        <![CDATA[
+        select * from T_movie movie where movie.movie_name like #{findWord}
+        ORDER BY movie.movie_time DESC,movie.movie_rate DESC,movie.movie_like_count DESC,movie.movie_share_count DESC,movie.movie_name ASC
+        limit ${maxCount}
+        ]]>
+    </select>
+    <!-- 根据导演名来搜索 -->
+    <select id="findMovieByMovieDirector" parameterType="java.util.Map" resultMap="HomePageMovie">
+        <![CDATA[
+        select * from T_movie movie where movie.movie_director like #{findWord}
+        ORDER BY movie.movie_time DESC,movie.movie_rate DESC,movie.movie_like_count DESC,movie.movie_share_count DESC,movie.movie_name ASC
+        limit ${maxCount}
+        ]]>
+    </select>
+    <!-- 根据电影类型来搜索 -->
+    <select id="findMovieByMovieType" parameterType="java.util.Map" resultMap="HomePageMovie">
+        <![CDATA[
+        SELECT * FROM T_movie movie where movie.movie_id in
+        (SELECT t.movie_id FROM T_movie_type_map t where t.movie_type_id in
+        (select tt.movie_type_id from T_movie_type tt where tt.movie_type_name like #{findWord}))
+        ORDER BY movie.movie_time DESC,movie.movie_rate DESC,movie.movie_like_count DESC,movie.movie_share_count DESC,movie.movie_name ASC
+        limit ${maxCount}
+        ]]>
+    </select>
+
+    <!-- 根据电影id获得电影详情 -->
+    <select id="getMovieByMovieId" parameterType="Integer" resultMap="HomePageMovie">
+        <![CDATA[
+        select * from T_movie movie where movie.movie_id = ${_parameter}
+        ]]>
+    </select>
+
+    <!-- 根据用户名获得推荐的电影集合 -->
+    <select id="getMoviesByUserName" parameterType="string" resultType="java.lang.String">
+        <![CDATA[
+        select movie.movie_ids from T_user_recom_movie movie where movie.user_id in
+        (select user.user_id from T_user user where user.user_name = #{_parameter})
+        ]]>
+    </select>
+
+    <!-- 根据电影id获得电影类型 -->
+    <select id="getMovieTypeByMovieId" parameterType="Integer" resultType="java.lang.String">
+        <![CDATA[
+        select movie.movie_type_name from T_movie_type movie where movie.movie_type_id in
+        (select t.movie_type_id from T_movie_type_map t where t.movie_id = ${_parameter})
+        ]]>
+    </select>
+</mapper>

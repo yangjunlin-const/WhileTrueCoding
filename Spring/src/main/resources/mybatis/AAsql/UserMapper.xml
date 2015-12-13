@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yjl.spring.UserMapper">
+    <resultMap id="UserResult" type="com.yjl.spring.model.User">
+        <id column="user_id" property="id" jdbcType="INTEGER"/>
+        <result column="user_name" property="name" jdbcType="VARCHAR"/>
+        <result column="user_pwd" property="pwd" jdbcType="VARCHAR"/>
+    </resultMap>
+     <select id="selectUserList"
+             parameterType="string"
+             resultMap="UserResult">
+         <![CDATA[
+         SELECT
+          d.user_id,d.user_name,user_pwd
+         FROM
+           T_user d
+           where id =#{userId}
+         ]]>
+     </select>
+</mapper>

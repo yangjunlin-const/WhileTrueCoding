@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yjl.spring.dao.User2MovieRateMapper" >
+  <resultMap id="BaseResultMap" type="com.yjl.spring.model.User2MovieRate" >
+    <id column="user_id" property="userId" jdbcType="INTEGER" />
+    <id column="movie_id" property="movieId" jdbcType="INTEGER" />
+    <result column="rating" property="rating" jdbcType="DOUBLE" />
+    <result column="rating_time" property="ratingTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    user_id, movie_id, rating, rating_time
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="com.yjl.spring.model.User2MovieRateKey" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_user_movie_rating_map
+    where user_id = #{userId,jdbcType=INTEGER}
+      and movie_id = #{movieId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="com.yjl.spring.model.User2MovieRateKey" >
+    delete from t_user_movie_rating_map
+    where user_id = #{userId,jdbcType=INTEGER}
+      and movie_id = #{movieId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.yjl.spring.model.User2MovieRate" >
+    insert into t_user_movie_rating_map (user_id, movie_id, rating, 
+      rating_time)
+    values (#{userId,jdbcType=INTEGER}, #{movieId,jdbcType=INTEGER}, #{rating,jdbcType=DOUBLE}, 
+      #{ratingTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.yjl.spring.model.User2MovieRate" >
+    insert into t_user_movie_rating_map
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="movieId != null" >
+        movie_id,
+      </if>
+      <if test="rating != null" >
+        rating,
+      </if>
+      <if test="ratingTime != null" >
+        rating_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="userId != null" >
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="movieId != null" >
+        #{movieId,jdbcType=INTEGER},
+      </if>
+      <if test="rating != null" >
+        #{rating,jdbcType=DOUBLE},
+      </if>
+      <if test="ratingTime != null" >
+        #{ratingTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.yjl.spring.model.User2MovieRate" >
+    update t_user_movie_rating_map
+    <set >
+      <if test="rating != null" >
+        rating = #{rating,jdbcType=DOUBLE},
+      </if>
+      <if test="ratingTime != null" >
+        rating_time = #{ratingTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where user_id = #{userId,jdbcType=INTEGER}
+      and movie_id = #{movieId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.yjl.spring.model.User2MovieRate" >
+    update t_user_movie_rating_map
+    set rating = #{rating,jdbcType=DOUBLE},
+      rating_time = #{ratingTime,jdbcType=TIMESTAMP}
+    where user_id = #{userId,jdbcType=INTEGER}
+      and movie_id = #{movieId,jdbcType=INTEGER}
+  </update>
+</mapper>

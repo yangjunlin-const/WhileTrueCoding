@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yjl.spring.dao.User2MovieCommentMapper" >
+  <resultMap id="BaseResultMap" type="com.yjl.spring.model.User2MovieComment" >
+    <id column="movie_comment_id" property="movieCommentId" jdbcType="INTEGER" />
+    <result column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="movie_id" property="movieId" jdbcType="INTEGER" />
+    <result column="movie_title" property="movieTitle" jdbcType="VARCHAR" />
+    <result column="movie_value" property="movieValue" jdbcType="VARCHAR" />
+    <result column="movie_comment" property="movieComment" jdbcType="VARCHAR" />
+    <result column="comment_time" property="commentTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    movie_comment_id, user_id, movie_id, movie_title, movie_value, movie_comment, comment_time
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_user_movie_comment_map
+    where movie_comment_id = #{movieCommentId,jdbcType=INTEGER}
+  </select>
+
+  <select id="getAllCommentsByMovieId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select * from t_user_movie_comment_map
+    where movie_comment_id = #{movieCommentId,jdbcType=INTEGER}
+  </select>
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_user_movie_comment_map
+    where movie_comment_id = #{movieCommentId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.yjl.spring.model.User2MovieComment" >
+    insert into t_user_movie_comment_map (movie_comment_id, user_id, movie_id, 
+      movie_title, movie_value, movie_comment, 
+      comment_time)
+    values (#{movieCommentId,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{movieId,jdbcType=INTEGER}, 
+      #{movieTitle,jdbcType=VARCHAR}, #{movieValue,jdbcType=VARCHAR}, #{movieComment,jdbcType=VARCHAR}, 
+      #{commentTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.yjl.spring.model.User2MovieComment" >
+    insert into t_user_movie_comment_map
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="movieCommentId != null" >
+        movie_comment_id,
+      </if>
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="movieId != null" >
+        movie_id,
+      </if>
+      <if test="movieTitle != null" >
+        movie_title,
+      </if>
+      <if test="movieValue != null" >
+        movie_value,
+      </if>
+      <if test="movieComment != null" >
+        movie_comment,
+      </if>
+      <if test="commentTime != null" >
+        comment_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="movieCommentId != null" >
+        #{movieCommentId,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null" >
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="movieId != null" >
+        #{movieId,jdbcType=INTEGER},
+      </if>
+      <if test="movieTitle != null" >
+        #{movieTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="movieValue != null" >
+        #{movieValue,jdbcType=VARCHAR},
+      </if>
+      <if test="movieComment != null" >
+        #{movieComment,jdbcType=VARCHAR},
+      </if>
+      <if test="commentTime != null" >
+        #{commentTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.yjl.spring.model.User2MovieComment" >
+    update t_user_movie_comment_map
+    <set >
+      <if test="userId != null" >
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="movieId != null" >
+        movie_id = #{movieId,jdbcType=INTEGER},
+      </if>
+      <if test="movieTitle != null" >
+        movie_title = #{movieTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="movieValue != null" >
+        movie_value = #{movieValue,jdbcType=VARCHAR},
+      </if>
+      <if test="movieComment != null" >
+        movie_comment = #{movieComment,jdbcType=VARCHAR},
+      </if>
+      <if test="commentTime != null" >
+        comment_time = #{commentTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where movie_comment_id = #{movieCommentId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.yjl.spring.model.User2MovieComment" >
+    update t_user_movie_comment_map
+    set user_id = #{userId,jdbcType=INTEGER},
+      movie_id = #{movieId,jdbcType=INTEGER},
+      movie_title = #{movieTitle,jdbcType=VARCHAR},
+      movie_value = #{movieValue,jdbcType=VARCHAR},
+      movie_comment = #{movieComment,jdbcType=VARCHAR},
+      comment_time = #{commentTime,jdbcType=TIMESTAMP}
+    where movie_comment_id = #{movieCommentId,jdbcType=INTEGER}
+  </update>
+</mapper>
