@@ -1,6 +1,6 @@
 package com.yjl.javabase.concurrent;
 
-import java.util.concurrent.Executor;
+import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.locks.Lock;
 
@@ -8,29 +8,51 @@ import java.util.concurrent.locks.Lock;
  * Created by on 12/17/15.
  */
 public class ReentrantLock {
-    private static final Executor EXECUTOR = Executors.newFixedThreadPool(10);
-    public int num = 0;
+    private static final ExecutorService EXECUTOR = Executors.newCachedThreadPool();
+    public volatile static int num = 0;
+    private Lock lock = new java.util.concurrent.locks.ReentrantLock();
 
     public static void main(String[] args) {
-        for (int i = 0; i < 10; i++) {
-            new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    //                        add();
-                }
-            }).start();
+        ReentrantLock reentrantLock = new ReentrantLock();
+        reentrantLock.test();
+    }
+
+    void test() {
+        for (int i = 0; i < 20; i++) {
+            EXECUTOR.execute(new Add());
         }
-       /* for (int i = 0; i < 10; i++)
-            EXECUTOR.execute(new Runnable() {
-                public void run() {
-                    try {
-                        add();
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
-            });*/
-        System.out.println("end");
+        EXECUTOR.shutdown();
+    }
+
+    /*synchronized void add() {
+        num++;
+        System.out.println(num);
+    }
+*/
+    void add() {
+        lock.lock();
+        try {
+            num++;
+            System.out.println(num);
+        } finally {
+            lock.unlock();
+        }
+    }
+
+    class Add implements Runnable {
+        public Add() {
+
+        }
+
+        @Override
+        public void run() {
+            add();
+        }
+
+      /*  synchronized void add() {
+            num++;
+            System.out.println(num);
+        }*/
     }
 
    /* private static void add() throws InterruptedException {
@@ -55,13 +77,5 @@ public class ReentrantLock {
          num++;
          System.out.println(num);
      }*/
-    class Count {
-         int num = 0;
-        Lock lock;
-
-         void test() {
-
-        }
-    }
 }
 
