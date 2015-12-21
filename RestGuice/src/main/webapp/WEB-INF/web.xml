@@ -3,16 +3,6 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
          version="2.5">
          
-<display-name>Hello restguice</display-name>
-<context-param>
-	<param-name>resteasy.guice.modules</param-name>
-	<param-value>com.yjl.rest.AppModule</param-value>
-</context-param>
-         
-<listener>
-	<listener-class>org.jboss.resteasy.plugins.guice.GuiceResteasyBootstrapServletContextListener</listener-class>
-</listener>
-
     <display-name>Hello restguice</display-name>
     <context-param>
         <param-name>resteasy.guice.modules</param-name>
