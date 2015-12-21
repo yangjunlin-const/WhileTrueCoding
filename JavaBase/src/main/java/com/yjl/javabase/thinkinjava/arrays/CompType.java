@@ -1,8 +1,8 @@
 package com.yjl.javabase.thinkinjava.arrays;//: arrays/CompType.java
 // Implementing Comparable in a class.
 import java.util.*;
-import net.mindview.util.*;
-import static net.mindview.util.Print.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class CompType implements Comparable<CompType> {
   int i;

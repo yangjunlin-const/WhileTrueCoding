@@ -2,7 +2,7 @@ package com.yjl.javabase.thinkinjava.concurrency;//: concurrency/HorseRace.java
 // Using CyclicBarriers.
 import java.util.concurrent.*;
 import java.util.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class Horse implements Runnable {
   private static int counter = 0;

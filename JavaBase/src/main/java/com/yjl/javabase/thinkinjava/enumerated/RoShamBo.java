@@ -1,7 +1,7 @@
 //: enumerated/RoShamBo.java
 // Common tools for RoShamBo examples.
 package com.yjl.javabase.thinkinjava.enumerated;
-import net.mindview.util.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
 
 public class RoShamBo {
   public static <T extends Competitor<T>>

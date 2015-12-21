@@ -1,7 +1,7 @@
 package com.yjl.javabase.thinkinjava.concurrency;//: concurrency/Restaurant.java
 // The producer-consumer approach to task cooperation.
 import java.util.concurrent.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class Meal {
   private final int orderNum;

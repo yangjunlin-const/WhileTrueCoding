@@ -2,7 +2,7 @@
 // Abstract classes and methods.
 package com.yjl.javabase.thinkinjava.interfaces.music4;
 import com.yjl.javabase.thinkinjava.polymorphism.music.Note;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 abstract class Instrument {
   private int i; // Storage allocated for each

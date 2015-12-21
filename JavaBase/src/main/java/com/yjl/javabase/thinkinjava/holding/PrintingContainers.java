@@ -1,7 +1,7 @@
 package com.yjl.javabase.thinkinjava.holding;//: holding/PrintingContainers.java
 // Containers print themselves automatically.
 import java.util.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class PrintingContainers {
   static Collection fill(Collection<String> collection) {

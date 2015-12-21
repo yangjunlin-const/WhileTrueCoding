@@ -3,7 +3,7 @@
 package com.yjl.javabase.thinkinjava.enumerated;
 import java.util.*;
 import static com.yjl.javabase.thinkinjava.enumerated.AlarmPoints.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class EnumSets {
   public static void main(String[] args) {

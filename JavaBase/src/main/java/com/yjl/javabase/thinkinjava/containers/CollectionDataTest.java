@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.containers;//: containers/CollectionDataTest.java
 import java.util.*;
-import net.mindview.util.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
 
 class Government implements Generator<String> {
   String[] foundation = ("strange women lying in ponds " +

@@ -1,8 +1,8 @@
 package com.yjl.javabase.thinkinjava.io;//: io/DirectoryDemo.java
 // Sample use of Directory utilities.
 import java.io.*;
-import net.mindview.util.*;
-import static net.mindview.util.Print.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class DirectoryDemo {
   public static void main(String[] args) {

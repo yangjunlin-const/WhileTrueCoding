@@ -1,5 +1,5 @@
 package com.yjl.javabase.thinkinjava.operators;//: operators/TernaryIfElse.java
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class TernaryIfElse {
   static int ternary(int i) {

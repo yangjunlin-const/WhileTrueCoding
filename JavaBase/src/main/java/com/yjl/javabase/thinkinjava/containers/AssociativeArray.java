@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.containers;//: containers/AssociativeArray.java
 // Associates keys with values.
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class AssociativeArray<K,V> {
   private Object[][] pairs;

@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.innerclasses;//: innerclasses/BigEgg2.java
 // Proper inheritance of an inner class.
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class Egg2 {
   protected class Yolk {

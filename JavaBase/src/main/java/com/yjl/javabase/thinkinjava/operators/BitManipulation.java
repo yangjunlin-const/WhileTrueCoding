@@ -1,7 +1,7 @@
 package com.yjl.javabase.thinkinjava.operators;//: operators/BitManipulation.java
 // Using the bitwise operators.
 import java.util.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class BitManipulation {
   public static void main(String[] args) {

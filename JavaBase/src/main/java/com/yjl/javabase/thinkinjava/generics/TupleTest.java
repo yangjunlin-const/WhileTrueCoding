@@ -1,5 +1,5 @@
 package com.yjl.javabase.thinkinjava.generics;//: generics/TupleTest.java
-import net.mindview.util.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
 
 class Amphibian {}
 class Vehicle {}

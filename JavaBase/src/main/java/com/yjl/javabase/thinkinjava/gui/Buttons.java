@@ -4,7 +4,7 @@ import javax.swing.*;
 import javax.swing.border.*;
 import javax.swing.plaf.basic.*;
 import java.awt.*;
-import static net.mindview.util.SwingConsole.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.SwingConsole.*;
 
 public class Buttons extends JFrame {
   private JButton jb = new JButton("JButton");

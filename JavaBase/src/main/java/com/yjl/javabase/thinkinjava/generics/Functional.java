@@ -2,7 +2,7 @@ package com.yjl.javabase.thinkinjava.generics;//: generics/Functional.java
 import java.math.*;
 import java.util.concurrent.atomic.*;
 import java.util.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 // Different types of function objects:
 interface Combiner<T> { T combine(T x, T y); }

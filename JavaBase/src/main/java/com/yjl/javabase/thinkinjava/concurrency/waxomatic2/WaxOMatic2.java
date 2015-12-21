@@ -3,7 +3,7 @@
 package com.yjl.javabase.thinkinjava.concurrency.waxomatic2;
 import java.util.concurrent.*;
 import java.util.concurrent.locks.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class Car {
   private Lock lock = new ReentrantLock();

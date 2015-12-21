@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.strings;//: strings/Finding.java
 import java.util.regex.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class Finding {
   public static void main(String[] args) {

@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.typeinfo;//: typeinfo/Person.java
 // A class with a Null Object.
-import net.mindview.util.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
 
 class Person {
   public final String first;

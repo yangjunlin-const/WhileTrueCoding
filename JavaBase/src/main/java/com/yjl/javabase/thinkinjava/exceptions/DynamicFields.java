@@ -1,7 +1,7 @@
 package com.yjl.javabase.thinkinjava.exceptions;//: exceptions/DynamicFields.java
 // A Class that dynamically adds fields to itself.
 // Demonstrates exception chaining.
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class DynamicFieldsException extends Exception {}
 

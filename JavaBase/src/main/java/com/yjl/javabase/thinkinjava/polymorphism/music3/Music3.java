@@ -2,7 +2,7 @@
 // An extensible program.
 package com.yjl.javabase.thinkinjava.polymorphism.music3;
 import com.yjl.javabase.thinkinjava.polymorphism.music.Note;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class Instrument {
   void play(Note n) { print("Instrument.play() " + n); }

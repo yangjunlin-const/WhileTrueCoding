@@ -1,8 +1,8 @@
 package com.yjl.javabase.thinkinjava.generics;//: generics/WatercolorSets.java
 import com.yjl.javabase.thinkinjava.generics.watercolors.*;
 import java.util.*;
-import static net.mindview.util.Print.*;
-import static net.mindview.util.Sets.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Sets.*;
 import static com.yjl.javabase.thinkinjava.generics.watercolors.Watercolors.*;
 
 public class WatercolorSets {

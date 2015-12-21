@@ -1,8 +1,8 @@
 package com.yjl.javabase.thinkinjava.containers;//: containers/Lists.java
 // Things you can do with Lists.
 import java.util.*;
-import net.mindview.util.*;
-import static net.mindview.util.Print.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class Lists {
   private static boolean b;

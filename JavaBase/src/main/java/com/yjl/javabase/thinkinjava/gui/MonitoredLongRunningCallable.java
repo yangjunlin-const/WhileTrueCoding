@@ -4,8 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.concurrent.*;
-import net.mindview.util.*;
-import static net.mindview.util.SwingConsole.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.SwingConsole.*;
 
 class MonitoredCallable implements Callable<String> {
   private static int counter = 0;

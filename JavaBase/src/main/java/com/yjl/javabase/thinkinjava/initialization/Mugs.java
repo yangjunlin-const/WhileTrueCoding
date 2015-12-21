@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.initialization;//: initialization/Mugs.java
 // Java "Instance Initialization."
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class Mug {
   Mug(int marker) {

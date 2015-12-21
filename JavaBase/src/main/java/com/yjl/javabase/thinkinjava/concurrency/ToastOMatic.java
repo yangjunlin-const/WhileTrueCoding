@@ -2,7 +2,7 @@ package com.yjl.javabase.thinkinjava.concurrency;//: concurrency/ToastOMatic.jav
 // A toaster that uses queues.
 import java.util.concurrent.*;
 import java.util.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class Toast {
   public enum Status { DRY, BUTTERED, JAMMED }

@@ -1,5 +1,5 @@
 package com.yjl.javabase.thinkinjava.exceptions;//: exceptions/MultipleReturns.java
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class MultipleReturns {
   public static void f(int i) {

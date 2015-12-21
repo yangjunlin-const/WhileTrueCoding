@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.enumerated;//: enumerated/TrafficLight.java
 // Enums in switch statements.
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 // Define an enum type:
 enum Signal { GREEN, YELLOW, RED, }

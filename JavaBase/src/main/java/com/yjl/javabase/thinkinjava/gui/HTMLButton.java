@@ -3,7 +3,7 @@ package com.yjl.javabase.thinkinjava.gui;//: gui/HTMLButton.java
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import static net.mindview.util.SwingConsole.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.SwingConsole.*;
 
 public class HTMLButton extends JFrame {
   private JButton b = new JButton(

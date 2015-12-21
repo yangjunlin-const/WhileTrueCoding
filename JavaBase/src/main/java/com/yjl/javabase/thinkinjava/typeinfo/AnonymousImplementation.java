@@ -3,7 +3,7 @@ package com.yjl.javabase.thinkinjava.typeinfo;//: typeinfo/AnonymousImplementati
 
 import com.yjl.javabase.thinkinjava.typeinfo.interfacea.*;
 
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class AnonymousA {
     public static A makeA() {

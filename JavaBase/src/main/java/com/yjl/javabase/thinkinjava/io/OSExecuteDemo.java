@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.io;//: io/OSExecuteDemo.java
 // Demonstrates standard I/O redirection.
-import net.mindview.util.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
 
 public class OSExecuteDemo {
   public static void main(String[] args) {

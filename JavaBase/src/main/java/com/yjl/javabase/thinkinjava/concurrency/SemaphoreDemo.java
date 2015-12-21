@@ -2,7 +2,7 @@ package com.yjl.javabase.thinkinjava.concurrency;//: concurrency/SemaphoreDemo.j
 // Testing the Pool class
 import java.util.concurrent.*;
 import java.util.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 // A task to check a resource out of a pool:
 class CheckoutTask<T> implements Runnable {

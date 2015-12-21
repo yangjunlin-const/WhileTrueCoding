@@ -1,5 +1,5 @@
 package com.yjl.javabase.thinkinjava.arrays;//: arrays/RandomGeneratorsTest.java
-import net.mindview.util.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
 
 public class RandomGeneratorsTest {
   public static void main(String[] args) {

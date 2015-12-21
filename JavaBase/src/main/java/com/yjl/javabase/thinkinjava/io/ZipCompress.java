@@ -5,7 +5,7 @@ package com.yjl.javabase.thinkinjava.io;//: io/ZipCompress.java
 import java.util.zip.*;
 import java.io.*;
 import java.util.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class ZipCompress {
   public static void main(String[] args)

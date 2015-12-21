@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.enumerated;//: enumerated/CarWash.java
 import java.util.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class CarWash {
   public enum Cycle {

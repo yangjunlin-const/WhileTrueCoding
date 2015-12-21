@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.reusing;//: reusing/PlaceSetting.java
 // Combining composition & inheritance.
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class Plate {
   Plate(int i) {

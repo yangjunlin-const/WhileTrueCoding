@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.innerclasses;//: innerclasses/AnonymousConstructor.java
 // Creating a constructor for an anonymous inner class.
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 abstract class Base {
   public Base(int i) {

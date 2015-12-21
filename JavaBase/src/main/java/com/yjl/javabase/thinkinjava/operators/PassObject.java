@@ -1,7 +1,7 @@
 package com.yjl.javabase.thinkinjava.operators;//: operators/PassObject.java
 // Passing objects to methods may not be
 // what you're used to.
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class Letter {
   char c;

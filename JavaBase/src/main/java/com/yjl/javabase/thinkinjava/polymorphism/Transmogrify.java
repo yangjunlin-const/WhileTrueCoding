@@ -1,7 +1,7 @@
 package com.yjl.javabase.thinkinjava.polymorphism;//: polymorphism/Transmogrify.java
 // Dynamically changing the behavior of an object
 // via composition (the "State" design pattern).
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class Actor {
   public void act() {}

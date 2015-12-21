@@ -1,8 +1,8 @@
 package com.yjl.javabase.thinkinjava.containers;//: containers/ReadOnly.java
 // Using the Collections.unmodifiable methods.
 import java.util.*;
-import net.mindview.util.*;
-import static net.mindview.util.Print.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class ReadOnly {
   static Collection<String> data =

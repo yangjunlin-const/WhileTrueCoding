@@ -1,8 +1,8 @@
 package com.yjl.javabase.thinkinjava.arrays;//: arrays/TestArrayGeneration.java
 // Test the tools that use generators to fill arrays.
 import java.util.*;
-import net.mindview.util.*;
-import static net.mindview.util.Print.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class TestArrayGeneration {
   public static void main(String[] args) {

@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.control;//: control/ForEachInt.java
-import static net.mindview.util.Range.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Range.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class ForEachInt {
   public static void main(String[] args) {

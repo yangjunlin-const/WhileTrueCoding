@@ -1,7 +1,7 @@
 package com.yjl.javabase.thinkinjava.concurrency;//: concurrency/ThreadVariations.java
 // Creating threads with inner classes.
 import java.util.concurrent.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 // Using a named inner class:
 class InnerThread1 {

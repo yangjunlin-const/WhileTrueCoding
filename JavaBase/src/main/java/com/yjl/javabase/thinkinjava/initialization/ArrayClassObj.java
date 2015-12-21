@@ -1,7 +1,7 @@
 package com.yjl.javabase.thinkinjava.initialization;//: initialization/ArrayClassObj.java
 // Creating an array of nonprimitive objects.
 import java.util.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class ArrayClassObj {
   public static void main(String[] args) {

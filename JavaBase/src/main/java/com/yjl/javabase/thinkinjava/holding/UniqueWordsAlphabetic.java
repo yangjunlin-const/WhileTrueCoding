@@ -1,7 +1,7 @@
 package com.yjl.javabase.thinkinjava.holding;//: holding/UniqueWordsAlphabetic.java
 // Producing an alphabetic listing.
 import java.util.*;
-import net.mindview.util.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
 
 public class UniqueWordsAlphabetic {
   public static void main(String[] args) {

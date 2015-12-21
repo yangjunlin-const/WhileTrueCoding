@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.holding;//: holding/SetOperations.java
 import java.util.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class SetOperations {
   public static void main(String[] args) {

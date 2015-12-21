@@ -1,7 +1,7 @@
 package com.yjl.javabase.thinkinjava.strings;//: strings/TheReplacements.java
 import java.util.regex.*;
-import net.mindview.util.*;
-import static net.mindview.util.Print.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 /*! Here's a block of text to use as input to
     the regular expression matcher. Note that we'll

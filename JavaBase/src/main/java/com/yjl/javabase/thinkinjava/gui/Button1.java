@@ -2,7 +2,7 @@ package com.yjl.javabase.thinkinjava.gui;//: gui/Button1.java
 // Putting buttons on a Swing application.
 import javax.swing.*;
 import java.awt.*;
-import static net.mindview.util.SwingConsole.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.SwingConsole.*;
 
 public class Button1 extends JFrame {
   private JButton

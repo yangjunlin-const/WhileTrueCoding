@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.enumerated;//: enumerated/NotClasses.java
 // {Exec: javap -c LikeClasses}
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 enum LikeClasses {
   WINKEN { void behavior() { print("Behavior1"); } },

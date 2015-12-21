@@ -3,7 +3,7 @@ package com.yjl.javabase.thinkinjava.concurrency;//: concurrency/PipedIO.java
 import java.util.concurrent.*;
 import java.io.*;
 import java.util.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class Sender implements Runnable {
   private Random rand = new Random(47);

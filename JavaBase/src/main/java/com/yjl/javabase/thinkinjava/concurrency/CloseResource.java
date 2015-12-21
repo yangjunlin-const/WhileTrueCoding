@@ -5,7 +5,7 @@ package com.yjl.javabase.thinkinjava.concurrency;//: concurrency/CloseResource.j
 import java.net.*;
 import java.util.concurrent.*;
 import java.io.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class CloseResource {
   public static void main(String[] args) throws Exception {

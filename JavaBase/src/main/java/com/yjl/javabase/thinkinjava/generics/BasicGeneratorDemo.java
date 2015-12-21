@@ -1,5 +1,5 @@
 package com.yjl.javabase.thinkinjava.generics;//: generics/BasicGeneratorDemo.java
-import net.mindview.util.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
 
 public class BasicGeneratorDemo {
   public static void main(String[] args) {

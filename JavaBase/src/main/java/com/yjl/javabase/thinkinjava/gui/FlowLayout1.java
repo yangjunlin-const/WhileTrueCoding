@@ -2,7 +2,7 @@ package com.yjl.javabase.thinkinjava.gui;//: gui/FlowLayout1.java
 // Demonstrates FlowLayout.
 import javax.swing.*;
 import java.awt.*;
-import static net.mindview.util.SwingConsole.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.SwingConsole.*;
 
 public class FlowLayout1 extends JFrame {
   public FlowLayout1() {

@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.initialization;//: initialization/StaticInitialization.java
 // Specifying initial values in a class definition.
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class Bowl {
   Bowl(int marker) {

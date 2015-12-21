@@ -2,7 +2,7 @@
 // Interfaces.
 package com.yjl.javabase.thinkinjava.interfaces.music5;
 import com.yjl.javabase.thinkinjava.polymorphism.music.Note;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 interface Instrument {
   // Compile-time constant:

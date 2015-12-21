@@ -1,7 +1,7 @@
 //: polymorphism/Sandwich.java
 // Order of constructor calls.
 package com.yjl.javabase.thinkinjava.polymorphism;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class Meal {
   Meal() { print("Meal()"); }

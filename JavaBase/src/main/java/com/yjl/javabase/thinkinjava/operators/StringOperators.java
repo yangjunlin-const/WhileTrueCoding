@@ -1,5 +1,5 @@
 package com.yjl.javabase.thinkinjava.operators;//: operators/StringOperators.java
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class StringOperators {
   public static void main(String[] args) {

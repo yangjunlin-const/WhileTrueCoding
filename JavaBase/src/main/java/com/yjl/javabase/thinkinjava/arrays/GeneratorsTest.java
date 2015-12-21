@@ -1,5 +1,5 @@
 package com.yjl.javabase.thinkinjava.arrays;//: arrays/GeneratorsTest.java
-import net.mindview.util.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
 
 public class GeneratorsTest {
   public static int size = 10;

@@ -1,7 +1,7 @@
 package com.yjl.javabase.thinkinjava.arrays;//: arrays/AlphabeticSearch.java
 // Searching with a Comparator.
 import java.util.*;
-import net.mindview.util.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
 
 public class AlphabeticSearch {
   public static void main(String[] args) {

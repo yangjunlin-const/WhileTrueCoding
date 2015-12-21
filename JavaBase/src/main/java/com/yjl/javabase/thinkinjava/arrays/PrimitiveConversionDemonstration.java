@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.arrays;//: arrays/PrimitiveConversionDemonstration.java
 import java.util.*;
-import net.mindview.util.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
 
 public class PrimitiveConversionDemonstration {
   public static void main(String[] args) {

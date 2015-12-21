@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.beans.*;
 import java.lang.reflect.*;
-import static net.mindview.util.SwingConsole.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.SwingConsole.*;
 
 public class BeanDumper extends JFrame {
   private JTextField query = new JTextField(20);

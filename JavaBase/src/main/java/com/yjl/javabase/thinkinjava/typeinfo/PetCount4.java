@@ -1,7 +1,7 @@
 package com.yjl.javabase.thinkinjava.typeinfo;//: typeinfo/PetCount4.java
 import com.yjl.javabase.thinkinjava.typeinfo.pets.*;
-import net.mindview.util.*;
-import static net.mindview.util.Print.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class PetCount4 {
   public static void main(String[] args) {

@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.generics;//: generics/TupleTest2.java
-import net.mindview.util.*;
-import static net.mindview.util.Tuple.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Tuple.*;
 
 public class TupleTest2 {
   static TwoTuple<String,Integer> f() {

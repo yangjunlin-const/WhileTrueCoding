@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.initialization;//: initialization/Demotion.java
 // Demotion of primitives and overloading.
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class Demotion {
   void f1(char x) { print("f1(char)"); }

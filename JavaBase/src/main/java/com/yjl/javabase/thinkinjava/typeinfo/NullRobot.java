@@ -2,7 +2,7 @@ package com.yjl.javabase.thinkinjava.typeinfo;//: typeinfo/NullRobot.java
 // Using a dynamic proxy to create a Null Object.
 import java.lang.reflect.*;
 import java.util.*;
-import net.mindview.util.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
 
 class NullRobotProxyHandler implements InvocationHandler {
   private String nullName;

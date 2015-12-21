@@ -3,8 +3,8 @@ package com.yjl.javabase.thinkinjava.generics;//: generics/Fill2.java
 // {main: Fill2Test}
 import com.yjl.javabase.thinkinjava.generics.coffee.*;
 import java.util.*;
-import net.mindview.util.*;
-import static net.mindview.util.Print.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 interface Addable<T> { void add(T t); }
 

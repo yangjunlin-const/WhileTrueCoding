@@ -1,7 +1,7 @@
 package com.yjl.javabase.thinkinjava.concurrency;//: concurrency/SimpleDaemons.java
 // Daemon threads don't prevent the program from ending.
 import java.util.concurrent.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class SimpleDaemons implements Runnable {
   public void run() {

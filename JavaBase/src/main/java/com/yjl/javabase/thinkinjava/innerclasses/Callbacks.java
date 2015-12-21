@@ -1,7 +1,7 @@
 //: innerclasses/Callbacks.java
 // Using inner classes for callbacks
 package com.yjl.javabase.thinkinjava.innerclasses;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 interface Incrementable {
   void increment();

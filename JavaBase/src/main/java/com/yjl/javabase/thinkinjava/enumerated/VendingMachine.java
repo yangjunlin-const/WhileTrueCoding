@@ -2,9 +2,9 @@
 // {Args: VendingMachineInput.txt}
 package com.yjl.javabase.thinkinjava.enumerated;
 import java.util.*;
-import net.mindview.util.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
 import static com.yjl.javabase.thinkinjava.enumerated.Input.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 enum Category {
   MONEY(NICKEL, DIME, QUARTER, DOLLAR),

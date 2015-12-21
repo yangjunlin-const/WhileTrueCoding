@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.io;//: io/UsingBuffers.java
 import java.nio.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class UsingBuffers {
   private static void symmetricScramble(CharBuffer buffer){

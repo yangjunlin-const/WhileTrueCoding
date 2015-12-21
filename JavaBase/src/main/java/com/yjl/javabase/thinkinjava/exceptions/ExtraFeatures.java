@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.exceptions;//: exceptions/ExtraFeatures.java
 // Further embellishment of exception classes.
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class MyException2 extends Exception {
   private int x;

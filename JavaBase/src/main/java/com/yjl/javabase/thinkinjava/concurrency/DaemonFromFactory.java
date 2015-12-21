@@ -1,8 +1,8 @@
 package com.yjl.javabase.thinkinjava.concurrency;//: concurrency/DaemonFromFactory.java
 // Using a Thread Factory to create daemons.
 import java.util.concurrent.*;
-import net.mindview.util.*;
-import static net.mindview.util.Print.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class DaemonFromFactory implements Runnable {
   public void run() {

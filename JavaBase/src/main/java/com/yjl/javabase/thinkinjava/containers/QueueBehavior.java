@@ -2,7 +2,7 @@ package com.yjl.javabase.thinkinjava.containers;//: containers/QueueBehavior.jav
 // Compares the behavior of some of the queues
 import java.util.concurrent.*;
 import java.util.*;
-import net.mindview.util.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
 
 public class QueueBehavior {
   private static int count = 10;

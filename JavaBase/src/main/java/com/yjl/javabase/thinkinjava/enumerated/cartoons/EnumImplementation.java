@@ -2,7 +2,7 @@
 // An enum can implement an interface
 package com.yjl.javabase.thinkinjava.enumerated.cartoons;
 import java.util.*;
-import net.mindview.util.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
 
 enum CartoonCharacter
 implements Generator<CartoonCharacter> {

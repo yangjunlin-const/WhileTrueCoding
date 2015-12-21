@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.reusing;//: reusing/Beetle.java
 // The full process of initialization.
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class Insect {
   private int i = 9;

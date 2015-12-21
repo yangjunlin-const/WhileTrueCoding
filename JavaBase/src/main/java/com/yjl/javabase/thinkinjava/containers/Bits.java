@@ -1,7 +1,7 @@
 package com.yjl.javabase.thinkinjava.containers;//: containers/Bits.java
 // Demonstration of BitSet.
 import java.util.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class Bits {
   public static void printBitSet(BitSet b) {

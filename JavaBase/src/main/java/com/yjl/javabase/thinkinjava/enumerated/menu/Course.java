@@ -1,6 +1,6 @@
 //: enumerated/menu/Course.java
 package com.yjl.javabase.thinkinjava.enumerated.menu;
-import net.mindview.util.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
 
 public enum Course {
   APPETIZER(Food.Appetizer.class),

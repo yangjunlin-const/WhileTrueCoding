@@ -1,7 +1,7 @@
 package com.yjl.javabase.thinkinjava.generics;//: generics/ExplicitTypeSpecification.java
 import com.yjl.javabase.thinkinjava.typeinfo.pets.*;
 import java.util.*;
-import net.mindview.util.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
 
 public class ExplicitTypeSpecification {
   static void f(Map<Person, List<Pet>> petPeople) {}

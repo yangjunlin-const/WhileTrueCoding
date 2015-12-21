@@ -1,7 +1,7 @@
 package com.yjl.javabase.thinkinjava.reusing;//: reusing/FinalData.java
 // The effect of final on fields.
 import java.util.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class Value {
   int i; // Package access

@@ -1,7 +1,7 @@
 package com.yjl.javabase.thinkinjava.io;//: io/Blip3.java
 // Reconstructing an externalizable object.
 import java.io.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class Blip3 implements Externalizable {
   private int i;

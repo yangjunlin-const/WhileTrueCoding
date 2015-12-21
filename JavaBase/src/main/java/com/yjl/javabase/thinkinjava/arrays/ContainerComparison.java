@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.arrays;//: arrays/ContainerComparison.java
 import java.util.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class BerylliumSphere {
   private static long counter;

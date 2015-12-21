@@ -1,7 +1,7 @@
 //: polymorphism/music/Music2.java
 // Overloading instead of upcasting.
 package com.yjl.javabase.thinkinjava.polymorphism.music;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class Stringed extends Instrument {
   public void play(Note n) {

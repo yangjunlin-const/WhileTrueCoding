@@ -4,7 +4,7 @@ package com.yjl.javabase.thinkinjava.io;//: io/LargeMappedFiles.java
 import java.nio.*;
 import java.nio.channels.*;
 import java.io.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class LargeMappedFiles {
   static int length = 0x8FFFFFF; // 128 MB

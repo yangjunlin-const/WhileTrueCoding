@@ -2,7 +2,7 @@ package com.yjl.javabase.thinkinjava.generics;//: generics/SimplerPets.java
 
 import com.yjl.javabase.thinkinjava.typeinfo.pets.Person;
 import com.yjl.javabase.thinkinjava.typeinfo.pets.Pet;
-import net.mindview.util.New;
+import com.yjl.javabase.thinkinjava.net.mindview.util.New;
 
 import java.util.List;
 import java.util.Map;

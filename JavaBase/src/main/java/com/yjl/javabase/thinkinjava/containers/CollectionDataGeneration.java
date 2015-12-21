@@ -1,7 +1,7 @@
 package com.yjl.javabase.thinkinjava.containers;//: containers/CollectionDataGeneration.java
 // Using the Generators defined in the Arrays chapter.
 import java.util.*;
-import net.mindview.util.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
 
 public class CollectionDataGeneration {
   public static void main(String[] args) {

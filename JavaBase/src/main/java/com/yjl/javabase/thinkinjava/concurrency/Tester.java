@@ -1,7 +1,7 @@
 package com.yjl.javabase.thinkinjava.concurrency;//: concurrency/Tester.java
 // Framework to test performance of concurrency containers.
 import java.util.concurrent.*;
-import net.mindview.util.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
 
 public abstract class Tester<C> {
   static int testReps = 10;

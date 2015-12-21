@@ -2,7 +2,7 @@ package com.yjl.javabase.thinkinjava.containers;//: containers/ListPerformance.j
 // Demonstrates performance differences in Lists.
 // {Args: 100 500} Small to keep build testing short
 import java.util.*;
-import net.mindview.util.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
 
 public class ListPerformance {
   static Random rand = new Random();

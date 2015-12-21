@@ -1,8 +1,8 @@
 package com.yjl.javabase.thinkinjava.arrays;//: arrays/ArraySearching.java
 // Using Arrays.binarySearch().
 import java.util.*;
-import net.mindview.util.*;
-import static net.mindview.util.Print.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class ArraySearching {
   public static void main(String[] args) {

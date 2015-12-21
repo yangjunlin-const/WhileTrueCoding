@@ -1,5 +1,5 @@
 package com.yjl.javabase.thinkinjava.holding;//: holding/StackTest.java
-import net.mindview.util.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
 
 public class StackTest {
   public static void main(String[] args) {

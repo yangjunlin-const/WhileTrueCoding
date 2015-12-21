@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.concurrency;//: concurrency/SyncObject.java
 // Synchronizing on another object.
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class DualSynch {
   private Object syncObject = new Object();

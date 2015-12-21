@@ -1,7 +1,7 @@
 package com.yjl.javabase.thinkinjava.io;//: io/Blips.java
 // Simple use of Externalizable & a pitfall.
 import java.io.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class Blip1 implements Externalizable {
   public Blip1() {

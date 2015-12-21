@@ -1,7 +1,7 @@
 package com.yjl.javabase.thinkinjava.generics;//: generics/LatentReflection.java
 // Using Reflection to produce latent typing.
 import java.lang.reflect.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 // Does not implement Performs:
 class Mime {

@@ -1,7 +1,7 @@
 package com.yjl.javabase.thinkinjava.io;//: io/GetData.java
 // Getting different representations from a ByteBuffer
 import java.nio.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class GetData {
   private static final int BSIZE = 1024;

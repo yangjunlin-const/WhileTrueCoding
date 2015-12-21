@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.control;//: control/LabeledFor.java
 // For loops with "labeled break" and "labeled continue."
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class LabeledFor {
   public static void main(String[] args) {

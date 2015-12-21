@@ -1,7 +1,7 @@
 //: polymorphism/Frog.java
 // Cleanup and inheritance.
 package com.yjl.javabase.thinkinjava.polymorphism;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class Characteristic {
   private String s;

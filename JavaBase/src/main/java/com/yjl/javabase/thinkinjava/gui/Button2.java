@@ -3,7 +3,7 @@ package com.yjl.javabase.thinkinjava.gui;//: gui/Button2.java
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import static net.mindview.util.SwingConsole.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.SwingConsole.*;
 
 public class Button2 extends JFrame {
   private JButton

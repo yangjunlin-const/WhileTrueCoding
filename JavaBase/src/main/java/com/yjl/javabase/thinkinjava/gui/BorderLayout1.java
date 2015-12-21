@@ -2,7 +2,7 @@ package com.yjl.javabase.thinkinjava.gui;//: gui/BorderLayout1.java
 // Demonstrates BorderLayout.
 import javax.swing.*;
 import java.awt.*;
-import static net.mindview.util.SwingConsole.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.SwingConsole.*;
 
 public class BorderLayout1 extends JFrame {
   public BorderLayout1() {

@@ -1,7 +1,7 @@
 package com.yjl.javabase.thinkinjava.generics;//: generics/DogsAndRobots.java
 // No latent typing in Java
 import com.yjl.javabase.thinkinjava.typeinfo.pets.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class PerformingDog extends Dog implements Performs {
   public void speak() { print("Woof!"); }

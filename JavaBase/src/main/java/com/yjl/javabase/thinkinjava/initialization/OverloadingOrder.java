@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.initialization;//: initialization/OverloadingOrder.java
 // Overloading based on the order of the arguments.
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class OverloadingOrder {
   static void f(String s, int i) {

@@ -2,7 +2,7 @@ package com.yjl.javabase.thinkinjava.generics;//: generics/Apply.java
 // {main: ApplyTest}
 import java.lang.reflect.*;
 import java.util.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class Apply {
   public static <T, S extends Iterable<? extends T>>

@@ -1,7 +1,7 @@
 package com.yjl.javabase.thinkinjava.concurrency;//: concurrency/OrnamentalGarden.java
 import java.util.concurrent.*;
 import java.util.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class Count {
   private int count = 0;

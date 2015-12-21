@@ -2,7 +2,7 @@ package com.yjl.javabase.thinkinjava.concurrency;//: concurrency/TestBlockingQue
 // {RunByHand}
 import java.util.concurrent.*;
 import java.io.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class LiftOffRunner implements Runnable {
   private BlockingQueue<LiftOff> rockets;

@@ -1,5 +1,5 @@
 package com.yjl.javabase.thinkinjava.exceptions;//: exceptions/Switch.java
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class Switch {
   private boolean state = false;

@@ -1,8 +1,8 @@
 package com.yjl.javabase.thinkinjava.arrays;//: arrays/Reverse.java
 // The Collections.reverseOrder() Comparator
 import java.util.*;
-import net.mindview.util.*;
-import static net.mindview.util.Print.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class Reverse {
   public static void main(String[] args) {

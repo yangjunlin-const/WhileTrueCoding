@@ -1,7 +1,7 @@
 package com.yjl.javabase.thinkinjava.concurrency;//: concurrency/DaemonsDontRunFinally.java
 // Daemon threads don't run the finally clause
 import java.util.concurrent.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class ADaemon implements Runnable {
   public void run() {

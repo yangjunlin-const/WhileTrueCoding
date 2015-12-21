@@ -1,8 +1,8 @@
 package com.yjl.javabase.thinkinjava.containers;//: containers/CollectionMethods.java
 // Things you can do with all Collections.
 import java.util.*;
-import net.mindview.util.*;
-import static net.mindview.util.Print.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class CollectionMethods {
   public static void main(String[] args) {

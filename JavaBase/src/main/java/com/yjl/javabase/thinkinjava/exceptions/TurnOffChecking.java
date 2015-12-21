@@ -1,7 +1,7 @@
 package com.yjl.javabase.thinkinjava.exceptions;//: exceptions/TurnOffChecking.java
 // "Turning off" Checked exceptions.
 import java.io.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class WrapCheckedException {
   void throwRuntimeException(int type) {

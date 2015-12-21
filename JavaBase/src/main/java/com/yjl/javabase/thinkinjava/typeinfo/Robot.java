@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.typeinfo;//: typeinfo/Robot.java
 import java.util.*;
-import net.mindview.util.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
 
 public interface Robot {
   String name();

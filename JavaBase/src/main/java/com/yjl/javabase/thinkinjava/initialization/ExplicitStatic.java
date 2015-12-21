@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.initialization;//: initialization/ExplicitStatic.java
 // Explicit static initialization with the "static" clause.
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class Cup {
   Cup(int marker) {

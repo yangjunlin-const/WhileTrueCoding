@@ -1,7 +1,7 @@
 package com.yjl.javabase.thinkinjava.operators;//: operators/MathOps.java
 // Demonstrates the mathematical operators.
 import java.util.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class MathOps {
   public static void main(String[] args) {

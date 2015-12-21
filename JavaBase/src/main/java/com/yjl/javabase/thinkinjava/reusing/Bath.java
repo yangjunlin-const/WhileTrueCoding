@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.reusing;//: reusing/Bath.java
 // Constructor initialization with composition.
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class Soap {
   private String s;

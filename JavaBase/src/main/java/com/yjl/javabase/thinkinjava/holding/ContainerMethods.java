@@ -1,5 +1,5 @@
 package com.yjl.javabase.thinkinjava.holding;//: holding/ContainerMethods.java
-import net.mindview.util.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
 
 public class ContainerMethods {
   public static void main(String[] args) {

@@ -1,7 +1,7 @@
 package com.yjl.javabase.thinkinjava.concurrency;//: concurrency/ExchangerDemo.java
 import java.util.concurrent.*;
 import java.util.*;
-import net.mindview.util.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
 
 class ExchangerProducer<T> implements Runnable {
   private Generator<T> generator;

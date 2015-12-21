@@ -2,7 +2,7 @@
 // Generate different types of Coffee:
 package com.yjl.javabase.thinkinjava.generics.coffee;
 import java.util.*;
-import net.mindview.util.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
 
 public class CoffeeGenerator
 implements Generator<Coffee>, Iterable<Coffee> {

@@ -1,7 +1,7 @@
 package com.yjl.javabase.thinkinjava.polymorphism;//: polymorphism/PolyConstructors.java
 // Constructors and polymorphism
 // don't produce what you might expect.
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class Glyph {
   void draw() { print("Glyph.draw()"); }

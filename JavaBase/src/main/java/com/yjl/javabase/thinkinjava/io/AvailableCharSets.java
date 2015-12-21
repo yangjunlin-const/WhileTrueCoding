@@ -2,7 +2,7 @@ package com.yjl.javabase.thinkinjava.io;//: io/AvailableCharSets.java
 // Displays Charsets and aliases
 import java.nio.charset.*;
 import java.util.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class AvailableCharSets {
   public static void main(String[] args) {

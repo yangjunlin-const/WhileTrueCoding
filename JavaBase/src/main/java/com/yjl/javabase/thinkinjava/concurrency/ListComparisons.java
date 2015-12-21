@@ -3,7 +3,7 @@ package com.yjl.javabase.thinkinjava.concurrency;//: concurrency/ListComparisons
 // Rough comparison of thread-safe List performance.
 import java.util.concurrent.*;
 import java.util.*;
-import net.mindview.util.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
 
 abstract class ListTest extends Tester<List<Integer>> {
   ListTest(String testId, int nReaders, int nWriters) {

@@ -1,5 +1,5 @@
 package com.yjl.javabase.thinkinjava.generics;//: generics/PrimitiveGenericTest.java
-import net.mindview.util.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
 
 // Fill an array using a generator:
 class FArray {

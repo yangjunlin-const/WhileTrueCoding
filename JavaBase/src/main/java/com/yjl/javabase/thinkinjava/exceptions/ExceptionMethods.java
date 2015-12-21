@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.exceptions;//: exceptions/ExceptionMethods.java
 // Demonstrating the Exception Methods.
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class ExceptionMethods {
   public static void main(String[] args) {

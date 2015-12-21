@@ -3,8 +3,8 @@ package com.yjl.javabase.thinkinjava.gui;//: gui/TextPane.java
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import net.mindview.util.*;
-import static net.mindview.util.SwingConsole.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.SwingConsole.*;
 
 public class TextPane extends JFrame {
   private JButton b = new JButton("Add Text");

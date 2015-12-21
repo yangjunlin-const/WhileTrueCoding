@@ -1,5 +1,5 @@
 package com.yjl.javabase.thinkinjava.enumerated;//: enumerated/RandomTest.java
-import net.mindview.util.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
 
 enum Activity { SITTING, LYING, STANDING, HOPPING,
   RUNNING, DODGING, JUMPING, FALLING, FLYING }

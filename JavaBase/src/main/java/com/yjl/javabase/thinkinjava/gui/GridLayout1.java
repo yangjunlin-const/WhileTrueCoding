@@ -2,7 +2,7 @@ package com.yjl.javabase.thinkinjava.gui;//: gui/GridLayout1.java
 // Demonstrates GridLayout.
 import javax.swing.*;
 import java.awt.*;
-import static net.mindview.util.SwingConsole.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.SwingConsole.*;
 
 public class GridLayout1 extends JFrame {
   public GridLayout1() {

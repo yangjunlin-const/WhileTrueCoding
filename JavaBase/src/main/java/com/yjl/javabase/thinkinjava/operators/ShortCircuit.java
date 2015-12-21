@@ -1,7 +1,7 @@
 package com.yjl.javabase.thinkinjava.operators;//: operators/ShortCircuit.java
 // Demonstrates short-circuiting behavior
 // with logical operators.
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class ShortCircuit {
   static boolean test1(int val) {

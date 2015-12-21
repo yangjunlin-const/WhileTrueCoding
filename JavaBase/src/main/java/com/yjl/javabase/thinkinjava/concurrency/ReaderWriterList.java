@@ -2,7 +2,7 @@ package com.yjl.javabase.thinkinjava.concurrency;//: concurrency/ReaderWriterLis
 import java.util.concurrent.*;
 import java.util.concurrent.locks.*;
 import java.util.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class ReaderWriterList<T> {
   private ArrayList<T> lockedList;

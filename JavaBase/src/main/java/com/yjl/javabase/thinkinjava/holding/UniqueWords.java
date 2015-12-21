@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.holding;//: holding/UniqueWords.java
 import java.util.*;
-import net.mindview.util.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
 
 public class UniqueWords {
   public static void main(String[] args) {

@@ -1,7 +1,7 @@
 //: interfaces/classprocessor/Apply.java
 package com.yjl.javabase.thinkinjava.interfaces.classprocessor;
 import java.util.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class Processor {
   public String name() {

@@ -1,7 +1,7 @@
 package com.yjl.javabase.thinkinjava.containers;//: containers/MapDataTest.java
 import java.util.*;
-import net.mindview.util.*;
-import static net.mindview.util.Print.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class Letters implements Generator<Pair<Integer,String>>,
   Iterable<Integer> {

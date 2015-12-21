@@ -4,7 +4,7 @@ package com.yjl.javabase.thinkinjava.concurrency.restaurant2;
 import com.yjl.javabase.thinkinjava.enumerated.menu.*;
 import java.util.concurrent.*;
 import java.util.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 // This is given to the waiter, who gives it to the chef:
 class Order { // (A data-transfer object)

@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.interfaces;//: interfaces/Games.java
 // A Game framework using Factory Methods.
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 interface Game { boolean move(); }
 interface GameFactory { Game getGame(); }

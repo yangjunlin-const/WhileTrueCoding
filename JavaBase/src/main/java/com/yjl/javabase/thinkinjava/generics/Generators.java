@@ -5,7 +5,7 @@ import com.yjl.javabase.thinkinjava.generics.coffee.*;
 
 import java.util.*;
 
-import net.mindview.util.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
 
 public class Generators {
     public static <T> Collection<T>

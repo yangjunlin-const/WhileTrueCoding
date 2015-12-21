@@ -1,8 +1,8 @@
 package com.yjl.javabase.thinkinjava.enumerated;//: enumerated/PostOffice.java
 // Modeling a post office.
 import java.util.*;
-import net.mindview.util.*;
-import static net.mindview.util.Print.*;
+import com.yjl.javabase.thinkinjava.net.mindview.util.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class Mail {
   // The NO's lower the probability of random selection:

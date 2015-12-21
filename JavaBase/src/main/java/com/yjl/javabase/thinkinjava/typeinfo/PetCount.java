@@ -2,7 +2,7 @@ package com.yjl.javabase.thinkinjava.typeinfo;//: typeinfo/PetCount.java
 // Using instanceof.
 import com.yjl.javabase.thinkinjava.typeinfo.pets.*;
 import java.util.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class PetCount {
   static class PetCounter extends HashMap<String,Integer> {

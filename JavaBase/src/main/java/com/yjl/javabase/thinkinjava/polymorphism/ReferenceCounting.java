@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.polymorphism;//: polymorphism/ReferenceCounting.java
 // Cleaning up shared member objects.
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class Shared {
   private int refcount = 0;

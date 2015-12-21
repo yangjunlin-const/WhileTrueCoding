@@ -2,7 +2,7 @@ package com.yjl.javabase.thinkinjava.concurrency;//: concurrency/InterruptingIdi
 // General idiom for interrupting a task.
 // {Args: 1100}
 import java.util.concurrent.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class NeedsCleanup {
   private final int id;

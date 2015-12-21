@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.enumerated;//: enumerated/OzWitch.java
 // The witches in the land of Oz.
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public enum OzWitch {
   // Instances must be defined first, before methods:

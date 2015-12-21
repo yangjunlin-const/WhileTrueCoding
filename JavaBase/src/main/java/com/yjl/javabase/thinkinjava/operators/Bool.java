@@ -1,7 +1,7 @@
 package com.yjl.javabase.thinkinjava.operators;//: operators/Bool.java
 // Relational and logical operators.
 import java.util.*;
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class Bool {
   public static void main(String[] args) {

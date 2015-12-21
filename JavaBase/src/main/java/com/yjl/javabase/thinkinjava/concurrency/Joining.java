@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.concurrency;//: concurrency/Joining.java
 // Understanding join().
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class Sleeper extends Thread {
   private int duration;

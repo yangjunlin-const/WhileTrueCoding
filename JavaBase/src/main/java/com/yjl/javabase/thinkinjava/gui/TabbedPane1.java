@@ -3,7 +3,7 @@ package com.yjl.javabase.thinkinjava.gui;//: gui/TabbedPane1.java
 import javax.swing.*;
 import javax.swing.event.*;
 import java.awt.*;
-import static net.mindview.util.SwingConsole.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.SwingConsole.*;
 
 public class TabbedPane1 extends JFrame {
   private String[] flavors = {

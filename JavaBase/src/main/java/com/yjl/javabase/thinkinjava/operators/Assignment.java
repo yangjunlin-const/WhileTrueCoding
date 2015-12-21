@@ -1,6 +1,6 @@
 package com.yjl.javabase.thinkinjava.operators;//: operators/Assignment.java
 // Assignment with objects is a bit tricky.
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 class Tank {
   int level;

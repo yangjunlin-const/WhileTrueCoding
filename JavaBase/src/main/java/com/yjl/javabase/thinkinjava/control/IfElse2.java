@@ -1,5 +1,5 @@
 package com.yjl.javabase.thinkinjava.control;//: control/IfElse2.java
-import static net.mindview.util.Print.*;
+import static com.yjl.javabase.thinkinjava.net.mindview.util.Print.*;
 
 public class IfElse2 {
   static int test(int testval, int target) {
