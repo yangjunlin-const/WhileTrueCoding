@@ -1,0 +1,11 @@
+option java_package = "com.yjl.rest.test.netty";
+
+option java_outer_classname = "Message";
+
+message OpMessage {
+    required string name = 1;
+    required string age = 2;
+    required int64 count = 3;
+}
+
+

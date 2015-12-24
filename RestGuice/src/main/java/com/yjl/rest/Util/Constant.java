@@ -13,4 +13,8 @@ public interface Constant {
     public static final int DEFAULT_MQ_SERVER_PORT = 18000;
 
     public static final String HOME = "restguice.home";
+
+    int nettyPort = 10011;
+
+    String localHost = "localhost";
 }
