@@ -1,7 +1,6 @@
 package com.yjl.rest.test.netty;
 
 import io.netty.channel.ChannelFuture;
-import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.util.ReferenceCountUtil;
@@ -50,8 +49,8 @@ public class ClientHandler extends ChannelHandlerAdapter {
     @Override
     public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
         logger.info("client channelReadComplete");
-//        ctx.flush();
-//        ctx.close();
+        ctx.flush();
+        ctx.close();
     }
 
     @Override

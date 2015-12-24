@@ -23,12 +23,12 @@ public class ServerHandler extends ChannelHandlerAdapter {
         response = builder.build();
         logger.info("server add one to count , now count is : " + count);
         ChannelFuture channelFuture = ctx.writeAndFlush(response);
-        channelFuture.addListener(new ChannelFutureListener() {
+       /* channelFuture.addListener(new ChannelFutureListener() {
             @Override
             public void operationComplete(ChannelFuture future) throws Exception {
                 ctx.close();
             }
-        });
+        });*/
     }
 
     @Override
