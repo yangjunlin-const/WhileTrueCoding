@@ -14,6 +14,7 @@
         <module>JavaBase</module>
         <module>RestGuice</module>
         <module>Spring</module>
+        <module>jgroup-raft-test</module>
     </modules>
 
     <profiles>
