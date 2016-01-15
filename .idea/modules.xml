@@ -3,12 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Algorithm/Algorithm.iml" filepath="$PROJECT_DIR$/Algorithm/Algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Design/Design.iml" filepath="$PROJECT_DIR$/Design/Design.iml" />
       <module fileurl="file://$PROJECT_DIR$/GoBase/GoBase.iml" filepath="$PROJECT_DIR$/GoBase/GoBase.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaBase/JavaBase.iml" filepath="$PROJECT_DIR$/JavaBase/JavaBase.iml" />
       <module fileurl="file://$PROJECT_DIR$/RestGuice/RestGuice.iml" filepath="$PROJECT_DIR$/RestGuice/RestGuice.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring/Spring.iml" filepath="$PROJECT_DIR$/Spring/Spring.iml" />
       <module fileurl="file://$PROJECT_DIR$/WhileTrueCoding.iml" filepath="$PROJECT_DIR$/WhileTrueCoding.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jgroup-raft-test/jgroup-raft-test.iml" filepath="$PROJECT_DIR$/jgroup-raft-test/jgroup-raft-test.iml" />
     </modules>
   </component>
 </project>

@@ -9,14 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>jgroup-raft-test</artifactId>
+    <artifactId>Design</artifactId>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.jgroups</groupId>
-            <artifactId>jgroups-raft</artifactId>
-            <version>0.2</version>
-        </dependency>
 
-    </dependencies>
 </project>

@@ -22,41 +22,36 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="RestGuice" />
       </profile>
       <profile default="false" name="Annotation profile for JavaBase" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="JavaBase" />
       </profile>
       <profile default="false" name="Annotation profile for Spring" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="Spring" />
       </profile>
       <profile default="false" name="Annotation profile for Algorithm" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="Algorithm" />
       </profile>
-      <profile default="false" name="Annotation profile for jgroup-raft-test" enabled="true">
+      <profile default="false" name="Annotation profile for Design" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="jgroup-raft-test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="Algorithm" target="1.8" />
+      <module name="Design" target="1.8" />
       <module name="JavaBase" target="1.8" />
-      <module name="jgroup-raft-test" target="1.8" />
       <module name="RestGuice" target="1.8" />
       <module name="Spring" target="1.8" />
       <module name="WhileTrueCoding" target="1.8" />
